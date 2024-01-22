@@ -89,13 +89,21 @@ Painoin **Next**.
 ![kuva17](/kuva17.png)
 
 Seuraavalla sivulla (*Users*) täytin kentät seuraavanlaisesti:
+
 *What is your name?*
+
 - Fanny Haapa
+
 *What name do you want to use to log in?*
+
 - fannyh
+
 *What is the name of this computer?*
+
 - keksi
+
 *Choose a password to keep your account safe.*
+
 - Kirjoitin 9-merkkisen salasanan jossa on sekalaisesti kirjaimia, numeroita ja erikoismerkkejä kahteen kertaan.
 - Kirjoitin salasanan uudelleen kahteen kertaan koska salasanat eivät täsmänneet.
 
