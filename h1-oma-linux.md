@@ -4,7 +4,7 @@ Aloitin harjoituksen tekemisen maanantaina 22.1.2024 noin klo 19 soluasunnossani
 
 Käynnistin VirtualBoxin, valitsin valikosta 'Machine' vaihtoehdon 'New', jonka jälkeen avautui uusi ikkuna 'Create Virtual Machine'.
 
-![kuva](/kuva01.png)
+![kuva1](/kuva01.png)
 
 Ikkunan kenttiin täytin seuraavat tiedot:
 
@@ -16,13 +16,13 @@ Ikkunan kenttiin täytin seuraavat tiedot:
 - Version: Debian (64-bit)
 - ✓ Skip Unattended Installation.
 
-[kuva]
+![kuva2](/kuva02.png)
 
 'Hardware'
 - Base Memory: 6000 MB
 - Processors: 2
 
-[kuva]
+![kuva3](/kuva03.png)
 
 'Hard Disk'
 - Create a Virtual Hard Disk Now
@@ -32,50 +32,61 @@ Ikkunan kenttiin täytin seuraavat tiedot:
 	'Hard Disk File Type and Variant'
 	- VDI (VirtualBow Disk Image)
 
-[kuva]
+![kuva4](/kuva04.png)
 
 Lopuksi painoin 'Finish'-nappia.
 
-[kuva]
-
 Kaksoisklikkasin uutta virtuaalikonetta.
 
-[kuva]
+![kuva5](/kuva05.png)
 
 Bootloader avautui, valitsin ensimmäisen vaihtoehdon painamalla enter.
 
-[kuva]
+![kuva6](/kuva06.png)
+
+Työpöytä tuli näkyviin.
+
+![kuva7](/kuva07.png)
 
 Klikkasin painiketta 'Applications' ja valitsin valikosta 'Web Browser'. Kirjoitin osoitekenttään "tero karvinen" ja painoin enter. Klikkasin ensimmäistä linkkiä ja pääsin Tero Karvisen nettisivuille.
 
-[kuva]
+![kuva8](/kuva08.png)
+![kuva10](/kuva10.png)
 
 Suljin selaimen painamalla x selaimen oikeasta yläkulmasta.
 
 Kaksoisklikkasin työpöydällä olevaa 'Install Debian' -kuvaketta.
 Sain seuraavan ilmoituksen:
 
-[kuva]
+![kuva12](/kuva12.png)
 
-En reagoinut ilmoitukseen tarpeeksi nopeasti, ja sain seuraavan virheilmoituksen.
+En reagoinut ilmoitukseen tarpeeksi nopeasti, ja sain virheilmoituksen. Suljin virheilmoituksen painamalla 'Close'.
 
-[kuva]
+![kuva13](/kuva13.png)
 
 Painoin 'Launch Anyway', ja 'Debian GNU/Linux Installer' -ikkuna avautui. Suurensin ikkunan painamalla neliötä ikkunan oikeasta yläkulmasta.
 
 Asennusohjelma ehdotti kieleksi 'American English', en tehnyt muutoksia ja painoin 'Next'.
 
+![kuva14](/kuva14.png)
+
 Seuraavalla sivulla ('Location') klikkasin kartasta Suomea, jolloin ohjelma täytti kohtiin 'Region': Europe ja 'Zone': Helsinki.
 
 Painoin 'Next'.
+
+![kuva15](/kuva15.png)
 
 Seuraavalla sivulla ('Keyboard') valitsin vasemmanpuoleisesta valikosta 'Finnish' ja oikeanpuoleisesta 'Default'.
 
 Painoin 'Next'.
 
-Seuraavalla sivulla ('Partions') valitsin vaihtoehdon 'Erase disk', jolloin sivun alareunaan tuli lisävalintoja, mutta en koskenut niihin.
+![kuva16](/kuva16.png)
+
+Seuraavalla sivulla ('Partitions') valitsin vaihtoehdon 'Erase disk', jolloin sivun alareunaan tuli lisävalintoja, mutta en koskenut niihin.
 
 Painoin 'Next'.
+
+![kuva17](/kuva17.png)
 
 Seuraavalla sivulla ('Users') täytin kentät seuraavanlaisesti:
 'What is your name?'
@@ -89,33 +100,64 @@ Seuraavalla sivulla ('Users') täytin kentät seuraavanlaisesti:
 
 Painoin 'Next'.
 
+![kuva19](/kuva19.png)
+
 Seuraavalla sivulla ('Summary') painoin 'Install'.
+
+![kuva20](/kuva20.png)
+
 Asennus alkoi ja kesti noin 4-5 minuuttia.
+
+![kuva21](/kuva21.png)
 
 ✓ Restart now
 
 Painoin 'Done'.
 
+![kuva22](/kuva22.png)
+
 Muutaman minuutin ajan ei tuntunut tapahtuvan mitään, mutta sitten kone käynnistyi ja login screen aukesi.
 
 Kirjauduin sisään.
 
+![kuva24](/kuva24.png)
+
 Testasin toimivuutta samalla tavalla kuin aiemminkin:
-"Klikkasin painiketta 'Applications' ja valitsin valikosta 'Web Browser'. Kirjoitin osoitekenttään "tero karvinen" ja painoin enter. Klikkasin ensimmäistä linkkiä ja pääsin Tero Karvisen nettisivuille."
+*Klikkasin painiketta 'Applications' ja valitsin valikosta 'Web Browser'. Kirjoitin osoitekenttään "tero karvinen" ja painoin enter. Klikkasin ensimmäistä linkkiä ja pääsin Tero Karvisen nettisivuille.*
 
-Klikkasin painiketta 'Applications' ja valitsin valikosta 'Terminal Emulator', komentorivi avautui. Kirjoitin komennon
+Klikkasin painiketta 'Applications' ja valitsin valikosta 'Terminal Emulator', komentokehote avautui. Kirjoitin komennon
 
-"sudo apt-get update"
+> $ sudo apt-get update
 
 jolloin ohjelma kysyi salasanaa, jonka kirjoitin (salasana ei näkynyt kirjoitettaessa) ja painoin enter.
 
+![kuva27](/kuva27.png)
+
+Syötin komennon softan päivittämiseksi ja painoin enter.
+
+> $ sudo apt-get -y dist-upgrade
+
 Muutaman minuutin päästä komento oli käsitelty.
 
-$ sudo apt-get -y install ufw
-Palomuuri päälle
-$ sudo ufw enable
+![kuva29](/kuva29.png)
 
-Klikkasin painiketta 'Applications' ja valitsin valikosta 'Log out'.
+Asensin palomuurin komennolla:
+
+> $ sudo apt-get -y install ufw
+
+![kuva31](/kuva31.png)
+
+Laitoin palomuurin päälle komennolla:
+
+> $ sudo ufw enable
+
+![kuva32](/kuva32.png)
+
+Seuraavaksi suljin komentokehotteen, klikkasin painiketta 'Applications' ja valitsin valikosta 'Log out'.
 Uusi ikkuna aukesi, painoin 'Restart'.
 
-Kello oli 20:50. Harmillisen suuri osa käytetystä ajasta meni tapellessa uuden näppäimistön ja uuden läppärin asetusten kanssa, mutta en sisällyttänyt sitä tähän raporttiin koska se ei liittynyt tehtävään.
+![kuva33](/kuva33.png)
+
+Kone käynnistyi uudelleen.
+
+Kello oli 20:50. Harmillisen suuri osa käytetystä ajasta meni tapellessa uuden näppäimistön ja uuden läppärin asetusten kanssa, mutta ette saa tietää seikkailuistani niiden suhteen koska se ei liittynyt tehtävään.
