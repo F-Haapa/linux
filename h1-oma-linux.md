@@ -4,7 +4,7 @@ Aloitin harjoituksen tekemisen maanantaina 22.1.2024 noin klo 19 soluasunnossani
 
 Käynnistin VirtualBoxin, valitsin valikosta 'Machine' vaihtoehdon 'New', jonka jälkeen avautui uusi ikkuna 'Create Virtual Machine'.
 
-[kuva]
+![kuva](/kuva01.png)
 
 Ikkunan kenttiin täytin seuraavat tiedot:
 
