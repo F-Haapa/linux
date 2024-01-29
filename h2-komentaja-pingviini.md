@@ -28,7 +28,7 @@ c) Asensin NetHackin komennolla
 asennus onnistui ja NetHack toimii.
 
 
-d)
+d) Tärkeät kansiot.
 
 ![kuva6](/h2kuva6.png)
 
