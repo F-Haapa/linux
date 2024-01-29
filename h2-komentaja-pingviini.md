@@ -2,9 +2,10 @@
 
 x)
 
-a) 22.18 Micron asennus (n. 5 min)
+a) Micron asennus (n. 5 min) komennolla
+> sudo apt-get -y install micro
 
-b)
+b) 
 
 c)
 
