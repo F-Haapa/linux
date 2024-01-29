@@ -1,8 +1,9 @@
 # h2 Komentaja Pingviini
 
-a) Micron asennus (n. 5 min) komennolla
+a) Micron asennus komennolla
 > sudo apt-get -y install micro
 
+onnistui ilman ongelmia.
 
 b) Rauta. Koitin ohjeiden (https://terokarvinen.com/2024/linux-palvelimet-2024-alkukevat/) mukaista komentoa,
 
